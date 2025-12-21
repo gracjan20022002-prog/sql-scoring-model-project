@@ -50,7 +50,7 @@ Develop SQL-based analytics and views to deliver detailed insights into company 
 
 ## 📂 Repository Structure
 * `/scripts` - DDL for table creation and DML for data transformation.
-* `/data` - Source datasets (CSV).
+* `/datasets` - Source datasets (CSV).
 * `/docs` - Project documentation and diagrams.
 
 ---
