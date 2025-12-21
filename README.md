@@ -52,3 +52,9 @@ Develop SQL-based analytics and views to deliver detailed insights into company 
 * `/scripts` - DDL for table creation and DML for data transformation.
 * `/data` - Source datasets (CSV).
 * `/docs` - Project documentation and diagrams.
+
+---
+
+## 🙋 About Me
+
+Hi, I'm Gracjan, I'm a student specializing in accounting and financial management with ACCA, I'm trying to develop my data analysis skills and understand the stock exchange.
