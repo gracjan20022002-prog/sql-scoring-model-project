@@ -1,19 +1,19 @@
 /*
 =====================================================================================================================================
-🥉 Data Warehouse: Bronze Layer Ingestion
+🥉 Data Warehouse: Bronze Layer 
 This repository contains the ETL (Extract, Transform, Load) logic for ingesting raw data into the Bronze layer of the Data Warehouse.
 =====================================================================================================================================
 The core component is the bronze.load_bronze stored procedure, which handles:
 - Data Cleaning: Truncating target tables before loading new data.
-- Static Data Insertion: Loading constant company information (e.g., sector, industry).
-- Bulk Data Import: Efficiently loading large financial and market datasets from external CSV files using BULK INSERT.
+- Static Data Insertion: Loading constant company information (e.g. sector, industry).
+- Bulk Data Import: Efficiently loading large financial and market datasets from CSV files using BULK INSERT.
 - Process Monitoring: Tracking and logging execution time for each ingestion step.
 - Error Handling: Managing exceptions with a try-catch block to ensure process stability.
 
 The procedure populates the following tables in the bronze schema:
 - bronze.companies_info: Basic company details.
--bronze.fin_reports: Raw quarterly financial reports.
--bronze.key_metrics: Historical stock prices and market metrics.
+- bronze.fin_reports: Raw quarterly financial reports.
+- bronze.key_metrics: Historical stock prices and market metrics.
 =====================================================================================================================================
 */
 
