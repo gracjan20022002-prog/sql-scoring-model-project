@@ -112,7 +112,12 @@ BEGIN
 	stock_price_max,
 	stock_price_close
 	FROM bronze.key_metrics;
-	
+	DELETE FROM silver.key_metrics
+	WHERE fiscal_period NOT IN ( 
+	SELECT DISTINCT fiscal_eoq
+	FROM silver.fin_reports
+	WHERE fiscal_eoq IS NOT NULL
+	);
 	SET @end_time = GETDATE();
 		PRINT '>>> silver.key_metrics Load Duration: ' + CAST (DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '=================================================';
