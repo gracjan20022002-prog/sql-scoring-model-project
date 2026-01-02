@@ -89,6 +89,8 @@ BEGIN
 	ebitda_pln_mln,
 	ebit_pln_mln
 	FROM bronze.fin_reports; 
+	ALTER TABLE silver.fin_reports
+	ALTER COLUMN fiscal_period DATE;
 	SET @end_time = GETDATE();
 		PRINT '>>> silver.fin_reports Load Duration: ' + CAST (DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '=================================================';
