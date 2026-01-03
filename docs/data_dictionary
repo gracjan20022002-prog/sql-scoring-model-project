@@ -3,20 +3,29 @@
 This document describes the schema for the Gold Layer of the Data Warehouse, designed for BI reporting and analytics.
 It consists of fact tables and dimension tables which contain specific business metrics.
 */
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-1. Dimension Tables
-gold.dim_company
-Contains descriptive attributes for companies listed in the database. Acts as the primary filtering dimension for all fact tables.
-Column Name,Data Type,Key Type,Description,Example
-company_id,INT,PK,Unique internal identifier for the company.,1
-ticker,VARCHAR,,Stock market symbol (ticker) used on the exchange.,"XTB, CDP"
-company_name,VARCHAR,,Full registered name of the company.,XTB S.A.
-sector,VARCHAR,,Broad economic sector classification.,Technology
-industry,VARCHAR,,Specific line of business within the sector.,Software & Services
- ### `[gold].[fact_results]`
+## 📖 Data Dictionary
+
+### 1. Dimension Tables
+
+#### `[gold].[dim_company]`
+**Type:** Dimension (SCD Type 1)
+**Description:** Stores descriptive attributes for companies. Used for filtering and grouping in reports.
+
+| Column Name | Data Type | Key | Description |
+| :--- | :--- | :--- | :--- |
+| `company_id` | `INT` | **PK** | Unique identifier for the company (Business Key). |
+| `ticker` | `VARCHAR` | | Stock market ticker symbol (e.g., 'XTB'). |
+| `company_name` | `VARCHAR` | | Full registered name of the company. |
+| `sector` | `VARCHAR` | | Economic sector (e.g., 'Technology'). |
+| `industry` | `VARCHAR` | | Specific industry classification (e.g., 'Software'). |
+
+---
+
+### 2. Fact Tables
+
+#### `[gold].[fact_results]`
+**Type:** Fact Table (Quarterly)
+**Description:** Contains financial performance metrics derived from quarterly reports.
 
 | Column Name | Data Type | Key | Description |
 | :--- | :--- | :--- | :--- |
@@ -27,3 +36,17 @@ industry,VARCHAR,,Specific line of business within the sector.,Software & Servic
 | `net_income_pln_mln` | `DECIMAL` | | Net profit/loss in million PLN. |
 | `ebitda_pln_mln` | `DECIMAL` | | EBITDA value in million PLN. |
 | `ebit_pln_mln` | `DECIMAL` | | EBIT (Operating Income) in million PLN. |
+
+#### `[gold].[fact_stockprice]`
+**Type:** Fact Table (Daily)
+**Description:** Contains historical daily stock market quotations.
+
+| Column Name | Data Type | Key | Description |
+| :--- | :--- | :--- | :--- |
+| `stockprice_key` | `BIGINT` | **PK** | Surrogate key for the fact table (generated via `ROW_NUMBER`). |
+| `company_id` | `INT` | **FK** | Foreign Key linking to `dim_company`. |
+| `fiscal_period` | `DATE` | | The specific trading date (Session Date). |
+| `stock_price_open` | `DECIMAL` | | Opening price of the stock. |
+| `stock_price_min` | `DECIMAL` | | Minimum price recorded during the day. |
+| `stock_price_max` | `DECIMAL` | | Maximum price recorded during the day. |
+| `stock_price_close` | `DECIMAL` | | Closing price of the stock (final). |
