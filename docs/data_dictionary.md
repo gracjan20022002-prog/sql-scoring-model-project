@@ -1,14 +1,12 @@
-/*
+
 📖 Data Dictionary: Gold Layer
 This document describes the schema for the Gold Layer of the Data Warehouse, designed for BI reporting and analytics.
 It consists of fact tables and dimension tables which contain specific business metrics.
-*/
-## 📖 Data Dictionary
 
 ### 1. Dimension Tables
 
 #### `[gold].[dim_company]`
-**Type:** Dimension (SCD Type 1)
+**Type:** Dimension 
 **Description:** Stores descriptive attributes for companies. Used for filtering and grouping in reports.
 
 | Column Name | Data Type | Key | Description |
