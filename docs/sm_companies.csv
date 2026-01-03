@@ -1,0 +1,11 @@
+company_id,ticker,company_name,sector,industry
+1,SNT,Synektik S.A.,Healthcare,Medical Equipment
+2,XTB,XTB S.A.,Financials,Capital Markets
+3,CBF,Cyber_Folks S.A.,Technology,Software & Services
+4,KRU,Kruk S.A.,Financials,Consumer Finance
+5,LPP,LPP S.A.,Consumer Discretionary,Apparel & Luxury Goods
+6,DIG,Digital Network S.A.,Communication Services,Advertising
+7,ACP,Asseco Poland S.A.,Technology,IT Services
+8,VRC,Vercom S.A.,Technology,Software & Services
+9,TXT,Text S.A.,Technology,Software & Services
+10,BFT,Benefit Systems S.A.,Consumer Discretionary,Leisure Facilities
