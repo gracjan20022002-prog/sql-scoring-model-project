@@ -1,0 +1,29 @@
+/*
+📖 Data Dictionary: Gold Layer
+This document describes the schema for the Gold Layer of the Data Warehouse, designed for BI reporting and analytics.
+It consists of fact tables and dimension tables which contain specific business metrics.
+*/
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+1. Dimension Tables
+gold.dim_company
+Contains descriptive attributes for companies listed in the database. Acts as the primary filtering dimension for all fact tables.
+Column Name,Data Type,Key Type,Description,Example
+company_id,INT,PK,Unique internal identifier for the company.,1
+ticker,VARCHAR,,Stock market symbol (ticker) used on the exchange.,"XTB, CDP"
+company_name,VARCHAR,,Full registered name of the company.,XTB S.A.
+sector,VARCHAR,,Broad economic sector classification.,Technology
+industry,VARCHAR,,Specific line of business within the sector.,Software & Services
+ ### `[gold].[fact_results]`
+
+| Column Name | Data Type | Key | Description |
+| :--- | :--- | :--- | :--- |
+| `result_key` | `BIGINT` | **PK** | Surrogate key for the fact table (generated via `ROW_NUMBER`). |
+| `company_id` | `INT` | **FK** | Foreign Key linking to `dim_company`. |
+| `fiscal_period` | `DATE` | | The fiscal quarter end date (e.g., '2022-03-31'). Used for time-series analysis. |
+| `revenue_pln_mln` | `DECIMAL` | | Total revenue in million PLN. |
+| `net_income_pln_mln` | `DECIMAL` | | Net profit/loss in million PLN. |
+| `ebitda_pln_mln` | `DECIMAL` | | EBITDA value in million PLN. |
+| `ebit_pln_mln` | `DECIMAL` | | EBIT (Operating Income) in million PLN. |
