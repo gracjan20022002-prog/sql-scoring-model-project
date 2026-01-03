@@ -52,6 +52,7 @@ Develop SQL-based analytics and views to deliver detailed insights into company 
 * `/scripts` - DDL for table creation and DML for data transformation.
 * `/datasets` - Source datasets (CSV).
 * `/docs` - Project documentation and diagrams.
+* `/tests` - Data tests and queries.
 
 ---
 
