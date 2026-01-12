@@ -55,10 +55,38 @@ Time-Travel Analysis: Users can isolate specific fiscal years (2022-2025) to ana
 
 ---
 
-## 🚀 How to Run
-1.  **Database:** Execute the SQL scripts located in `sql_backend/` to create the necessary Views.
-2.  **Power BI:** Open `reports/SM Stock Price Dashboard.pbix`.
-3.  **Data Source:** Update the connection string to point to your local SQL Data Warehouse instance.
+# 🚀 How to Run & User Guide
+
+This document provides instructions on how to set up the environment and effectively use the analytical reports located in the `docs/` folder.
+
+---
+
+## 1. 📊 Power BI Reports (Frontend)
+Navigate to the **`docs/`** folder. You will find two versions of each dashboard. Choose the format that best suits your needs:
+
+### 📄 PDF Version – Quick Preview
+* **Files:** `docs/SM Stock Price Dashboard.pdf` & `docs/Scoring Model Dashboard.pdf`
+* **Purpose:** Ideal for a quick overview of the visual layout, KPIs, and design structure **without installing any software**. You can open these in any web browser.
+* **Limitation:** These are static snapshots. Filters and tooltips **do not** work.
+
+### 📈 PBIX Version – Full Analytics
+* **Files:** `docs/SM Stock Price Dashboard.pbix` & `docs/Scoring Model Dashboard.pbix`
+* **Requirement:** Requires **Microsoft Power BI Desktop** (free).
+* **Why use this?** This format unlocks the **full interactivity** of the project:
+    * **Live Filtering:** Change companies and timeframes instantly.
+    * **Tooltips:** Hover over charts to see precise data points.
+    * **DAX Logic:** Inspect the underlying code for measures like "Max Drawdown" or "Moving Averages".
+
+---
+
+## 2. 🎛️ Interactivity & Filters (How to use)
+
+Both dashboards feature a dedicated **Control Panel** (located on the right-hand side) that drives the analysis.
+
+* **Company Name Selector:** Allows you to switch the analysis context between different entities (e.g., *Benefit Systems, XTB, LPP*). 
+    > **Note:** When you select a company, all visuals, KPIs, and complex calculations (such as Moving Averages or Drawdowns) automatically recalculate to reflect data **only** for the selected entity.
+
+* **Fiscal Period Slider:** Enables time-travel analysis. You can narrow down the view to specific fiscal years or quarters to analyze performance during specific economic cycles.
 
 ---
 *Author: Gracjan*
