@@ -37,8 +37,9 @@ Built on a **SQL Data Warehouse** (Gold Layer) and visualized in **Power BI**, i
 
 **Risk Assessment (Max Drawdown):** A dedicated "Company Drawdown" area chart highlights the maximum observed loss from peak to trough, serving as a critical risk metric for investors.
 
-**Valuation Trends (P/S Ratio):** Monitors the Price-to-Sales trends to detect potential overvaluation or undervaluation signals[cite: 159].**Market Sentiment Correlation:
-A dual-axis analysis comparing **YoY Revenue Growth** vs. **YoY Stock Price Performance**. Divergences here indicate potential "Alpha" signals (e.g., Revenue is up, but Price is down = potential undervaluation).
+**Valuation Trends (P/S Ratio):** Monitors the Price-to-Sales trends to detect potential overvaluation or undervaluation signals.
+
+**Market Sentiment Correlation: A dual-axis analysis comparing **YoY Revenue Growth** vs. **YoY Stock Price Performance**. Divergences here indicate potential "Alpha" signals (e.g., Revenue is up, but Price is down = potential undervaluation).
 
 ---
 
