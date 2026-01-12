@@ -19,9 +19,9 @@ Built on a **SQL Data Warehouse** (Gold Layer) and visualized in **Power BI**, i
 
 
 ### Key Insights & Visuals:
-**Revenue Dynamics:** Visualizes quarterly revenue streams against a **4-quarter Moving Average** to identify long-term growth trends versus seasonal fluctuations.
-**Profitability Ratios:** deep dive into **Net Profit Margin** and **EBITDA Margin** to assess operational efficiency over time.
-**Growth Dynamics:** A comparative view of Quarter-over-Quarter (QoQ) growth for Revenue vs. Net Income, highlighting periods of rapid expansion or contraction.
+**Revenue Dynamics:** Visualizes quarterly revenue streams against a **4-quarter Moving Average** to identify long-term growth trends versus seasonal fluctuations.**
+**Profitability Ratios:** deep dive into **Net Profit Margin** and **EBITDA Margin** to assess operational efficiency over time.**
+**Growth Dynamics:** A comparative view of Quarter-over-Quarter (QoQ) growth for Revenue vs. Net Income, highlighting periods of rapid expansion or contraction.**
 ---
 
 ## 📉 Dashboard 2: Stock Market & Risk Analysis (Technical Analysis)
@@ -30,8 +30,8 @@ Built on a **SQL Data Warehouse** (Gold Layer) and visualized in **Power BI**, i
 <img width="1276" height="716" alt="image" src="https://github.com/user-attachments/assets/3ff3176c-a047-40af-bea0-d80335861e27" />
 
 ### Key Insights & Visuals:
-**Volatility Analysis:** Tracks the **intra-quarter volatility** (high-low spread) and compares it with the average stock price to identify periods of market uncertainty.
-**Risk Assessment (Max Drawdown):** A dedicated "Company Drawdown" area chart highlights the maximum observed loss from peak to trough, serving as a critical risk metric for investors.
+**Volatility Analysis:** Tracks the **intra-quarter volatility** (high-low spread) and compares it with the average stock price to identify periods of market uncertainty.**
+**Risk Assessment (Max Drawdown):** A dedicated "Company Drawdown" area chart highlights the maximum observed loss from peak to trough, serving as a critical risk metric for investors.**
 **Valuation Trends (P/S Ratio):** Monitors the Price-to-Sales trends to detect potential overvaluation or undervaluation signals[cite: 159].**Market Sentiment Correlation:** A dual-axis analysis comparing **YoY Revenue Growth** vs. **YoY Stock Price Performance**. Divergences here indicate potential "Alpha" signals (e.g., Revenue is up, but Price is down = potential undervaluation).
 
 ---
@@ -40,9 +40,9 @@ Built on a **SQL Data Warehouse** (Gold Layer) and visualized in **Power BI**, i
 
 Both dashboards are designed with a user-centric navigation pane located on the right/left sidebar.
 
-**Dynamic Filtering:** The **Company Name** and **Fiscal Period** selectors allow users to slice data across all visuals instantly.
-**Cross-Report Context:** Selecting a specific company (e.g., *Benefit Systems S.A.* or *XTB S.A.*) instantly recalculates complex measures like Moving Averages and Drawdowns specifically for that entity, filtering out noise from the rest of the market.
-**Time-Travel Analysis:** Users can isolate specific fiscal years (2022-2025) to analyze performance during specific economic cycle.
+**Dynamic Filtering:** The **Company Name** and **Fiscal Period** selectors allow users to slice data across all visuals instantly.**
+**Cross-Report Context:** Selecting a specific company (e.g., *Benefit Systems S.A.* or *XTB S.A.*) instantly recalculates complex measures like Moving Averages and Drawdowns specifically for that entity, filtering out noise from the rest of the market.**
+**Time-Travel Analysis:** Users can isolate specific fiscal years (2022-2025) to analyze performance during specific economic cycle.**
 ---
 
 ## 🚀 How to Run
