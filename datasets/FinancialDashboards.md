@@ -39,7 +39,7 @@ Built on a **SQL Data Warehouse** (Gold Layer) and visualized in **Power BI**, i
 
 **Valuation Trends (P/S Ratio):** Monitors the Price-to-Sales trends to detect potential overvaluation or undervaluation signals.
 
-**Market Sentiment Correlation: A dual-axis analysis comparing **YoY Revenue Growth** vs. **YoY Stock Price Performance.
+**Market Sentiment Correlation:** A dual-axis analysis comparing **YoY Revenue Growth** vs. **YoY Stock Price Performance.**
 
 ---
 
