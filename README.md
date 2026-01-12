@@ -31,7 +31,7 @@ Develop a relational database schema using SQL to consolidate financial data fro
 Develop SQL-based analytics and views to deliver detailed insights into company performance and valuation.
 
 #### Key Analysis Areas
-* **profitability Analysis**: 
+* **Profitability Analysis**: 
     * Calculating Net Profit Margin and Operating Margin trends over the last 6-8 quarters.
 * **Growth Metrics**: 
     * Year-over-Year (YoY) and Quarter-over-Quarter (QoQ) revenue and income growth.
