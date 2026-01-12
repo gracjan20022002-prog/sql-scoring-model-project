@@ -52,6 +52,7 @@ Both dashboards are designed with a user-centric navigation pane located on the 
 **Cross-Report Context:** Selecting a specific company (e.g., *Benefit Systems S.A.* or *XTB S.A.*) instantly recalculates complex measures like Moving Averages and Drawdowns specifically for that entity, filtering out noise from the rest of the market.
 
 Time-Travel Analysis: Users can isolate specific fiscal years (2022-2025) to analyze performance during specific economic cycle.
+
 ---
 
 ## 🚀 How to Run
